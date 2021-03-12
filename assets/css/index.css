@@ -1,0 +1,34 @@
+ /*设置body图片  */
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     /* background: url('/assets/images/login_bg.jpg'); */
+     background: url('/assets/images/login_bg.jpg');
+ }
+
+ .header {
+     margin-top: 20px;
+ }
+
+ .loginbox {
+     position: fixed;
+     width: 400px;
+     height: 310px;
+     background: #fff;
+     /* 居中 */
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+
+ .loginbox .title {
+     width: 100%;
+     height: 60px;
+     background-color: red;
+     background: url("/assets/images/login_title.png") no-repeat center;
+ }
+
