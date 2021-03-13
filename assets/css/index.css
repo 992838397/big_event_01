@@ -5,8 +5,10 @@
      padding: 0;
      width: 100%;
      height: 100%;
+     overflow: hidden;
      /* background: url('/assets/images/login_bg.jpg'); */
-     background: url('/assets/images/login_bg.jpg');
+     background: url('/assets/images/01.jpg') no-repeat;
+     background-size: cover;
  }
 
  .header {
@@ -17,7 +19,7 @@
      position: fixed;
      width: 400px;
      height: 310px;
-     background: #fff;
+     background: rgba(255, 255, 255, 0.644);
      /* 居中 */
      top: 50%;
      left: 50%;
@@ -32,3 +34,28 @@
      background: url("/assets/images/login_title.png") no-repeat center;
  }
 
+ /* 登陆区域 */
+
+ .layui-form {
+     padding: 0 30px;
+ }
+
+ /* a标签右浮 */
+ .links {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .layui-form-item {
+     position: relative;
+ }
+
+ .layui-icon {
+     position: absolute;
+     top: 10px;
+     left: 10px;
+ }
+
+ .layui-input {
+     padding-left: 35px;
+ }

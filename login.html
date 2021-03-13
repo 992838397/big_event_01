@@ -20,24 +20,90 @@
 
     <!-- 登入区域 -->
     <div class="loginbox">
-        <!-- 标题 -->
+        <!-- 登入标题 -->
         <div class="title"></div>
-        <!-- form表单 -->
-        <form class="layui_form">
-            <div class="layui_icon">
-                <i class="layui-icon layui-icon-username"></i>
-                <input type="text" placeholder="请输入用户名">
-            </div>
+        <!-- 登陆区域 -->
+        <div class="login-box">
+            <!-- 登陆表单 -->
+            <form class="layui-form" id="form_login">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <!-- 图标字体 -->
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" value="linziyun" name="username" required lay-verify="required"
+                        placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登入密码 -->
+                <div class="layui-form-item">
+                    <!-- 图标字体 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" value="116616" name="password" required lay-verify="required|pwd"
+                        placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid  layui-btn-normal" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+                <!-- a链接切换 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_reg">去注册</a>
 
+                </div>
+            </form>
+        </div>
+        <!-- 注册区域 -->
+        <div class="reg-box" style="display:none">
+            <!-- 注册表单 -->
+            <form class="layui-form" id="form_reg">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <!-- 图标字体 -->
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登入密码 -->
+                <div class="layui-form-item">
+                    <!-- 图标字体 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 再次确认密码 -->
+                <div class="layui-form-item">
+                    <!-- 图标字体 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="repassword" required lay-verify="required|pwd|repwd"
+                        placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 按钮 -->
+                <div class="layui-form-item">
+                    <!-- lay-submit必须存在,后面会有submit事件绑定 -->
+                    <button class="layui-btn layui-btn-fluid  layui-btn-normal" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+                <!-- a链接切换 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_login">去登入</a>
 
+                </div>
+            </form>
 
-            <!-- <div class="layui_icon">
-                <button>登入</button>
-            </div>
-            <a href="#">去注册账号</a> -->
-        </form>
-
+        </div>
     </div>
+
+
+
+    <!-- 引入layui  JS文件 -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+
+    <!-- 引入JQ文件 -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 引入 baseAPi  JS -->
+    <script src="/assets/js/baseAPi.js"></script>
+    <!-- 引入自己主页的 -->
+    <script src="/assets/js/login.js"></script>
 
 </body>
 
