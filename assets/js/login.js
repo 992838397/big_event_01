@@ -91,7 +91,7 @@ $(function () {
                 // 保存token在本地, 未来的接口要使用到token;
                 localStorage.setItem('token', res.token);
                 // 跳转页面
-                // location.href = '/index.html';
+                location.href = '/index.html';
             }
         })
 
