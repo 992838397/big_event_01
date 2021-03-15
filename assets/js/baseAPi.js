@@ -18,8 +18,9 @@ $(function () {
 
 
 
+            // 3.登陆拦截
             options.complete = function (res) {
-                console.log(res.responseJSON);
+                // console.log(res.responseJSON);
                 var obj = res.responseJSON;
                 if (obj.status == 1 && obj.message == '身份认证失败！') {
                     // 1.清空本地token   token是身份验证参数,唯一性

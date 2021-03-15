@@ -60,12 +60,12 @@ function getUserInof() {
 // 渲染头像图片的函数
 function randerAvatar(user) {
     // 1.渲染名称 (nickname优先,如果没有,就用username)
-    console.log(user);
+    // console.log(user);
     var name = user.nickname || user.username;
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
     if (user.user_pic !== null) {
         // 有头像
-        $('.layui-nav-img').show().arrt('src', user.user_pic);
+        $('.layui-nav-img').show().attr('src', user.user_pic);
         $('.text-avatar').hide()
 
 
